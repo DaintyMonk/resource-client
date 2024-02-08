@@ -1,3 +1,7 @@
 @use "normalize";
 @use "root";
 @use "font";
+
+body {
+	background-color: var(--clr-200);
+}
