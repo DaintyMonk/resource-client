@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 	export default {
-		name: "PrimaryButton",
+		name: "VPrimaryBtn",
 	};
 </script>
 

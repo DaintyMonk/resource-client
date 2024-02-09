@@ -1,8 +1,8 @@
 <script lang="ts">
-	import PrimaryButton from "~/components/PrimaryButton.vue";
+	import VPrimaryBtn from "~/components/v-primary-btn.vue";
 	export default {
-		name: "WelcomeSection",
-		components: { PrimaryButton },
+		name: "VWelcome",
+		components: { VPrimaryBtn },
 	};
 </script>
 
@@ -26,7 +26,7 @@
 				House Resource is a popular destination for coffee lovers and those
 				seeking a warm and inviting space to enjoy their favorite beverage.
 			</p>
-			<PrimaryButton>Menu</PrimaryButton>
+			<VPrimaryBtn>Menu</VPrimaryBtn>
 		</div>
 	</section>
 </template>

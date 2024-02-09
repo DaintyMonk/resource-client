@@ -1,13 +1,13 @@
 <script lang="ts">
 	import Vue from "vue";
-	import WelcomeSection from "~/components/WelcomeSection.vue";
+	import VWelcome from "~/components/v-welcome.vue";
 
 	export default Vue.extend({
 		name: "Home",
-		components: { WelcomeSection },
+		components: { VWelcome },
 	});
 </script>
 
 <template>
-	<WelcomeSection />
+	<VWelcome />
 </template>
