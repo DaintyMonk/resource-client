@@ -35,6 +35,7 @@
 	.welcome {
 		position: relative;
 		height: 40.25rem;
+		margin-bottom: 6.25rem;
 
 		&__video {
 			position: absolute;
@@ -54,7 +55,7 @@
 		}
 
 		&__heading {
-			margin-bottom: 2.5rem;
+			margin: 0 0 2.5rem 0;
 			color: var(--clr-200);
 		}
 
