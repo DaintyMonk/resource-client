@@ -46,8 +46,11 @@
 		}
 
 		&__container {
-			width: 33.13rem;
-			margin: 6.25rem 0 0 6.25rem;
+			--max-width: 33.13rem;
+			--padding-left: 6.25rem;
+
+			width: min(100%, calc(33.13rem + var(--padding-left)));
+			padding: 6.25rem 0 0 var(--padding-left);
 		}
 
 		&__heading {
