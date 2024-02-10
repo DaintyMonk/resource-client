@@ -1,13 +1,13 @@
 <script lang="ts">
-	import VHeader from "~/components/v-header.vue";
+	import VHeaderSection from "~/components/v-header-section.vue";
 	export default {
-		components: { VHeader },
+		components: { VHeaderSection },
 	};
 </script>
 
 <template>
 	<div class="content-grid full-width">
-		<VHeader></VHeader>
+		<VHeaderSection />
 		<Nuxt />
 	</div>
 </template>

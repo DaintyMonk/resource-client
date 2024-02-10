@@ -1,7 +1,7 @@
 <script lang="ts">
 	import VPrimaryBtn from "~/components/v-primary-btn.vue";
 	export default {
-		name: "VWelcome",
+		name: "VWelcomeSection",
 		components: { VPrimaryBtn },
 	};
 </script>

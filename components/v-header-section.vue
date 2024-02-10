@@ -1,6 +1,6 @@
 <script lang="ts">
 	export default {
-		name: "VHeader",
+		name: "VHeaderSection",
 	};
 </script>
 

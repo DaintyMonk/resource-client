@@ -1,7 +1,7 @@
 <script lang="ts">
 	import VCarousel from "~/components/v-carousel.vue";
 	export default {
-		name: "VFavorite",
+		name: "VFavoriteSection",
 		components: { VCarousel },
 		data() {
 			return {

@@ -1,19 +1,19 @@
 <script lang="ts">
 	import Vue from "vue";
-	import VWelcome from "~/components/v-welcome.vue";
-	import VFavorite from "~/components/v-favorite.vue";
-	import VAbout from "~/components/v-about.vue";
+	import VWelcomeSection from "~/components/v-welcome-section.vue";
+	import VFavoriteSection from "~/components/v-favorite-section.vue";
+	import VAboutSection from "~/components/v-about-section.vue";
 
 	export default Vue.extend({
 		name: "Home",
-		components: { VAbout, VFavorite, VWelcome },
+		components: { VAboutSection, VFavoriteSection, VWelcomeSection },
 	});
 </script>
 
 <template>
 	<div>
-		<VWelcome />
-		<VFavorite />
-		<VAbout />
+		<VWelcomeSection />
+		<VFavoriteSection />
+		<VAboutSection />
 	</div>
 </template>
