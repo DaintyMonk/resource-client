@@ -26,7 +26,7 @@
 				House Resource is a popular destination for coffee lovers and those
 				seeking a warm and inviting space to enjoy their favorite beverage.
 			</p>
-			<VPrimaryBtn>Menu</VPrimaryBtn>
+			<VPrimaryBtn path="/menu">Menu</VPrimaryBtn>
 		</div>
 	</section>
 </template>

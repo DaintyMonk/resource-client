@@ -1,11 +1,21 @@
 <script lang="ts">
 	export default {
 		name: "VPrimaryBtn",
+		props: {
+			path: {
+				type: String,
+				default: () => null,
+			},
+			hash: {
+				type: String,
+				default: () => null,
+			},
+		},
 	};
 </script>
 
 <template>
-	<NuxtLink class="btn__link" cl to="/">
+	<NuxtLink class="btn__link" :to="{ path: path, hash: hash }">
 		<button class="btn_primary">
 			<slot />
 			<img src="/icons/coffee-cup.svg" alt="coffee-cup" />
