@@ -37,7 +37,7 @@
 </script>
 
 <template>
-	<section id="#favorite" class="favorite">
+	<section id="favorite" class="favorite">
 		<h2 class="favorite__heading heading-text heading-text_medium">
 			Choose your <span class="text-accent">favorite</span> coffee
 		</h2>

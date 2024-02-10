@@ -12,12 +12,12 @@
 		<nav>
 			<ul class="anchor-links" role="list">
 				<li class="anchor-links__item">
-					<NuxtLink class="link" :to="{ path: '/', hash: '#favorite' }"
+					<NuxtLink class="link" :to="{ path: '/', hash: 'favorite' }"
 						>Favorite coffee</NuxtLink
 					>
 				</li>
 				<li class="anchor-links__item">
-					<NuxtLink class="link" :to="{ path: '/', hash: '#about' }"
+					<NuxtLink class="link" :to="{ path: '/', hash: 'about' }"
 						>About</NuxtLink
 					>
 				</li>
