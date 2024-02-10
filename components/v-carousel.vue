@@ -1,9 +1,12 @@
 <script lang="js">
 	import VCarouselItem from "~/components/v-carousel-item.vue";
 	import VSliderControl from "~/components/v-slider-control";
+	import VBtnIconDark from "~/components/v-btn-icon-dark";
+	import VArrowLeftIcon from "~/components/icons/v-arrow-left-icon";
+	import VArrowRightIcon from "~/components/icons/v-arrow-right-icon";
 	export default {
 		name: "VCarousel",
-		components: { VSliderControl, VCarouselItem },
+		components: { VArrowRightIcon, VArrowLeftIcon, VBtnIconDark, VSliderControl, VCarouselItem },
 		props: {
 			carouselData: {
 				type: Array,
@@ -64,22 +67,9 @@
 <template>
 	<div>
 		<div class="slider">
-			<button class="slider__btn" @click="prevSlide">
-				<svg
-					class="slider__btn-icon"
-					width="14"
-					height="14"
-					viewBox="0 0 14 14"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<path
-						d="M13.5 7H1M1 7L7 1M1 7L7 13"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-				</svg>
-			</button>
+			<VBtnIconDark class="slider__btn" @click.native="prevSlide">
+				<VArrowLeftIcon />
+			</VBtnIconDark>
 			<ul class="slider__list" role="list">
 				<li
 					v-for="item in carouselData"
@@ -93,22 +83,9 @@
 					<VCarouselItem :item-data="item" />
 				</li>
 			</ul>
-			<button class="slider__btn" @click="nextSlide">
-				<svg
-					class="slider__btn-icon"
-					width="14"
-					height="14"
-					viewBox="0 0 14 14"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<path
-						d="M1 7H13.5M13.5 7L7.5 1M13.5 7L7.5 13"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-				</svg>
-			</button>
+			<VBtnIconDark class="slider__btn" @click.native="nextSlide">
+				<VArrowRightIcon />
+			</VBtnIconDark>
 		</div>
 		<div class="slider__control">
 			<VSliderControl

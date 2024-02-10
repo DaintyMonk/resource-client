@@ -1,6 +1,9 @@
 <script lang="ts">
+	import VIcon from "~/components/v-icon.vue";
+	import VCoffeeCupIcon from "~/components/icons/v-coffee-cup-icon.vue";
 	export default {
 		name: "VHeaderSection",
+		components: { VCoffeeCupIcon, VIcon },
 	};
 </script>
 
@@ -36,12 +39,9 @@
 		<div class="menu-link">
 			<NuxtLink class="link" to="/menu">
 				Menu
-				<img
-					src="/icons/coffee-cup.svg"
-					alt="coffee-cup"
-					width="20"
-					height="20"
-				/>
+				<VIcon width="20" height="20" icon-color="none" stroke-color="none">
+					<VCoffeeCupIcon />
+				</VIcon>
 			</NuxtLink>
 		</div>
 	</header>
@@ -87,6 +87,11 @@
 		cursor: pointer;
 		text-decoration: none;
 
+		> svg {
+			fill: transparent;
+			stroke: var(--clr-700);
+		}
+
 		&:after {
 			content: "";
 			position: absolute;
@@ -104,7 +109,7 @@
 			width: 100%;
 		}
 
-		> img {
+		> svg {
 			display: inline-block;
 			vertical-align: top;
 			margin-left: 5px;

@@ -1,6 +1,9 @@
 <script lang="ts">
+	import VIcon from "~/components/v-icon.vue";
+	import VCoffeeCupIcon from "~/components/icons/v-coffee-cup-icon.vue";
 	export default {
 		name: "VPrimaryBtn",
+		components: { VCoffeeCupIcon, VIcon },
 		props: {
 			path: {
 				type: String,
@@ -18,7 +21,9 @@
 	<NuxtLink class="btn__link" :to="{ path: path, hash: hash }">
 		<button class="btn_primary">
 			<slot />
-			<img src="/icons/coffee-cup.svg" alt="coffee-cup" />
+			<VIcon width="20" height="20" icon-color="none" stroke-color="none">
+				<VCoffeeCupIcon />
+			</VIcon>
 		</button>
 	</NuxtLink>
 </template>
@@ -45,14 +50,16 @@
 			line-height: 1.5;
 			color: var(--clr-700);
 
-			& > img {
+			& > svg {
 				width: 0;
 				opacity: 0;
 				margin-left: 0.5rem;
+				fill: transparent;
+				stroke: var(--clr-700);
 				transition: width 0.4s ease-in-out;
 			}
 
-			&:hover > img {
+			&:hover > svg {
 				width: 20px;
 				opacity: 1;
 			}
