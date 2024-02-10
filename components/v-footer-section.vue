@@ -81,7 +81,7 @@
 						</NuxtLink>
 					</li>
 					<li class="contacts__list-item">
-						<NuxtLink class="contacts__link" to="/">
+						<span class="contacts__link">
 							<VIcon
 								class="contacts__link-icon"
 								width="20"
@@ -92,7 +92,7 @@
 								<VClockIcon />
 							</VIcon>
 							Mon-Sat: 9:00 AM – 23:00 PM
-						</NuxtLink>
+						</span>
 					</li>
 				</ul>
 			</nav>
@@ -177,6 +177,10 @@
 			&:hover:after,
 			&:hover:focus {
 				width: 100%;
+			}
+
+			&:is(span):hover:after {
+				width: 0;
 			}
 
 			&-icon {
