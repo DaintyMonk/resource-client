@@ -37,7 +37,7 @@
 			</ul>
 		</nav>
 		<div class="menu-link">
-			<NuxtLink class="link" to="/menu">
+			<NuxtLink class="link" to="/menu" active-class="link_active">
 				Menu
 				<VIcon width="20" height="20" icon-color="none" stroke-color="none">
 					<VCoffeeCupIcon />
@@ -52,7 +52,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		margin: 20px 0;
+		margin: 1.25rem 0;
 	}
 
 	.anchor-links {
@@ -99,20 +99,21 @@
 			transform: translateX(-50%);
 			display: block;
 			width: 0;
-			height: 2px;
+			height: 0.125rem;
 			background-color: var(--clr-700);
 			transition: width 0.3s ease-in-out;
 		}
 
 		&:hover:after,
-		&:hover:focus {
+		&:hover:focus,
+		&_active:after {
 			width: 100%;
 		}
 
 		> svg {
 			display: inline-block;
 			vertical-align: top;
-			margin-left: 5px;
+			margin-left: 0.3125rem;
 		}
 	}
 </style>
