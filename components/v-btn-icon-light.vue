@@ -26,6 +26,7 @@
 		background-color: transparent;
 		border: 0.06rem solid var(--clr-300);
 		border-radius: 6.25rem;
+		cursor: pointer;
 
 		&:hover {
 			background-color: var(--clr-200);

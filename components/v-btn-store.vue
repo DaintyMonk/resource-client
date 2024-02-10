@@ -44,6 +44,7 @@
 		padding: 0.75rem 1.25rem;
 		border: 0.06rem solid var(--clr-600);
 		border-radius: 6.25rem;
+		cursor: pointer;
 
 		&__icon {
 			fill: var(--clr-700);
