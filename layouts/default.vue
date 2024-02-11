@@ -1,16 +1,16 @@
 <script lang="ts">
-	import VHeaderSection from "~/components/v-header-section.vue";
-	import VFooterSection from "~/components/v-footer-section.vue";
+	import VSectionHeader from "~/components/v-section-header.vue";
+	import VSectionFooter from "~/components/v-section-footer.vue";
 	export default {
-		components: { VFooterSection, VHeaderSection },
+		components: { VSectionFooter, VSectionHeader },
 	};
 </script>
 
 <template>
 	<div class="content-grid full-width">
-		<VHeaderSection />
+		<VSectionHeader />
 		<Nuxt />
-		<VFooterSection />
+		<VSectionFooter />
 	</div>
 </template>
 

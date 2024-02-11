@@ -5,7 +5,7 @@
 	import VBtnStore from "~/components/v-btn-store.vue";
 
 	export default Vue.extend({
-		name: "VMobileSection",
+		name: "VSectionMobile",
 		components: { VBtnStore, VGooglePlayIcon, VAppStoreIcon },
 	});
 </script>

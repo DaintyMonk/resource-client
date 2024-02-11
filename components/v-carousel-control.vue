@@ -1,6 +1,6 @@
 <script>
 	export default {
-		name: "VSliderControl",
+		name: "VCarouselControl",
 		props: {
 			controlIndex: {
 				type: Number,

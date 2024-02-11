@@ -1,12 +1,12 @@
 <script lang="js">
 	import VCarouselItem from "~/components/v-carousel-item.vue";
-	import VSliderControl from "~/components/v-slider-control";
+	import VCarouselControl from "~/components/v-carousel-control";
 	import VBtnIconDark from "~/components/v-btn-icon-dark";
 	import VArrowLeftIcon from "~/components/icons/v-arrow-left-icon";
 	import VArrowRightIcon from "~/components/icons/v-arrow-right-icon";
 	export default {
 		name: "VCarousel",
-		components: { VArrowRightIcon, VArrowLeftIcon, VBtnIconDark, VSliderControl, VCarouselItem },
+		components: { VArrowRightIcon, VArrowLeftIcon, VBtnIconDark, VCarouselControl, VCarouselItem },
 		props: {
 			carouselData: {
 				type: Array,
@@ -88,7 +88,7 @@
 			</VBtnIconDark>
 		</div>
 		<div class="slider__control">
-			<VSliderControl
+			<VCarouselControl
 				v-for="item in carouselData"
 				:key="item.id"
 				:control-index="item.id"

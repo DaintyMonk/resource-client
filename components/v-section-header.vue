@@ -2,7 +2,7 @@
 	import VIcon from "~/components/v-icon.vue";
 	import VCoffeeCupIcon from "~/components/icons/v-coffee-cup-icon.vue";
 	export default {
-		name: "VHeaderSection",
+		name: "VSectionHeader",
 		components: { VCoffeeCupIcon, VIcon },
 	};
 </script>

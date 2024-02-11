@@ -1,26 +1,26 @@
 <script lang="ts">
 	import Vue from "vue";
-	import VWelcomeSection from "~/components/v-welcome-section.vue";
-	import VFavoriteSection from "~/components/v-favorite-section.vue";
-	import VAboutSection from "~/components/v-about-section.vue";
-	import VMobileSection from "~/components/v-mobile-section.vue";
+	import VSectionWelcome from "~/components/v-section-welcome.vue";
+	import VSectionFavorite from "~/components/v-section-favorite.vue";
+	import VSectionAbout from "~/components/v-section-about.vue";
+	import VSectionMobile from "~/components/v-section-mobile.vue";
 
 	export default Vue.extend({
 		name: "Home",
 		components: {
-			VMobileSection,
-			VAboutSection,
-			VFavoriteSection,
-			VWelcomeSection,
+			VSectionMobile,
+			VSectionAbout,
+			VSectionFavorite,
+			VSectionWelcome,
 		},
 	});
 </script>
 
 <template>
 	<div>
-		<VWelcomeSection />
-		<VFavoriteSection />
-		<VAboutSection />
-		<VMobileSection />
+		<VSectionWelcome />
+		<VSectionFavorite />
+		<VSectionAbout />
+		<VSectionMobile />
 	</div>
 </template>

@@ -8,7 +8,7 @@
 	import VClockIcon from "~/components/icons/v-clock-icon.vue";
 	import VBtnIconLight from "~/components/v-btn-icon-light.vue";
 	export default {
-		name: "VFooterSection",
+		name: "VSectionFooter",
 		components: {
 			VBtnIconLight,
 			VClockIcon,
