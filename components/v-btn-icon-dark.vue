@@ -8,7 +8,7 @@
 
 <template>
 	<button class="btn-icon_dark">
-		<VIcon width="24" height="24" stroke-color="none">
+		<VIcon width="24" height="24" icon-color="transparent" stroke-color="none">
 			<slot />
 		</VIcon>
 	</button>

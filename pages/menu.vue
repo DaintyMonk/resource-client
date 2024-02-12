@@ -1,9 +1,11 @@
 <script>
 	import VTabBtn from "../components/v-tab-btn";
 	import VMenuCard from "../components/v-menu-card";
+	import VBtnIconDark from "../components/v-btn-icon-dark";
+	import VRefreshIcon from "../components/icons/v-refresh-icon";
 	export default {
 		name: "MenuPage",
-		components: { VMenuCard, VTabBtn },
+		components: { VBtnIconDark, VRefreshIcon, VMenuCard, VTabBtn },
 		data() {
 			return {
 				tabs: [
@@ -246,6 +248,12 @@
 				:price="card.price"
 			/>
 		</div>
+		<VBtnIconDark
+			v-if="menu[currentMenuIndex].length > 4"
+			class="menu__refresh"
+		>
+			<VRefreshIcon />
+		</VBtnIconDark>
 	</section>
 </template>
 
@@ -276,6 +284,25 @@
 			justify-content: space-between;
 			gap: 2.5rem;
 			margin-top: 2.5rem;
+		}
+	}
+
+	@media (768px <= width < 1440px) {
+		.menu {
+			&__container {
+				margin: 2.5rem 0.875rem 2.5rem 0.875rem;
+			}
+
+			&-item {
+				&:nth-child(n + 5) {
+					display: none;
+				}
+			}
+
+			&__refresh {
+				display: flex;
+				margin-inline: auto;
+			}
 		}
 	}
 </style>
