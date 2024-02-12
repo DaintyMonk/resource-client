@@ -79,4 +79,37 @@
 			}
 		}
 	}
+
+	@media (768px <= width < 1440px) {
+		.about {
+			&__container {
+				width: 43rem;
+				height: 100%;
+				margin-inline: auto;
+			}
+
+			&__img {
+				width: 100%;
+
+				&:not(&:first-child, &:last-child) {
+					display: none;
+				}
+
+				& > img {
+					position: absolute;
+					top: -2.25rem;
+					left: -2.1875rem;
+					right: -2.1875rem;
+					bottom: -2.25rem;
+					width: 47.38rem;
+					max-width: 47.38rem;
+					height: 42.38rem;
+
+					&:hover {
+						transform: scale(0.91);
+					}
+				}
+			}
+		}
+	}
 </style>
