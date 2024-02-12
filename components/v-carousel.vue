@@ -154,4 +154,18 @@
 			justify-content: center;
 		}
 	}
+
+	@media (768px <= width < 1440px) {
+		.slider {
+			&__btn {
+				&:first-child {
+					margin-left: 0;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
 </style>
