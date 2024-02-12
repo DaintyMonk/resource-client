@@ -36,6 +36,7 @@
 			</VBtnStore>
 		</div>
 		<img
+			class="mobile__img"
 			src="/mobile/mobile-screens.png"
 			alt="mobile-screens"
 			width="630"
@@ -68,6 +69,18 @@
 
 		&__btn {
 			margin-right: 1rem;
+		}
+	}
+
+	@media (768px <= width < 1440px) {
+		.mobile {
+			&__content {
+				max-width: 100%;
+			}
+
+			&__img {
+				margin: 6.25rem auto 0;
+			}
 		}
 	}
 </style>

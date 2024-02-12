@@ -29,7 +29,7 @@
 		</VIcon>
 		<div class="btn-store__content">
 			<p class="btn-store__text main-text_caption">{{ text }}</p>
-			<span class="btn-store__name">{{ storeName }}</span>
+			<span class="btn-store__name btn-text">{{ storeName }}</span>
 		</div>
 	</div>
 </template>
@@ -60,9 +60,6 @@
 		}
 
 		&__name {
-			font-size: var(--fs-300);
-			font-weight: var(--fw-bold);
-			line-height: 1.5;
 			color: var(--clr-700);
 		}
 
