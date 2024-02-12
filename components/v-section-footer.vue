@@ -53,7 +53,7 @@
 			<nav>
 				<ul class="contacts__list" role="list">
 					<li class="contacts__list-item">
-						<NuxtLink class="contacts__link" to="/">
+						<NuxtLink class="contacts__link link-text" to="/">
 							<VIcon
 								class="contacts__link-icon"
 								width="20"
@@ -67,7 +67,7 @@
 						</NuxtLink>
 					</li>
 					<li class="contacts__list-item">
-						<NuxtLink class="contacts__link" to="/">
+						<NuxtLink class="contacts__link link-text" to="/">
 							<VIcon
 								class="contacts__link-icon"
 								width="20"
@@ -81,7 +81,7 @@
 						</NuxtLink>
 					</li>
 					<li class="contacts__list-item">
-						<span class="contacts__link">
+						<span class="contacts__link link-text">
 							<VIcon
 								class="contacts__link-icon"
 								width="20"
@@ -112,11 +112,11 @@
 		border-radius: 2.5rem;
 
 		&__social {
-			width: min(100%, 33.13rem);
+			width: 33.13rem;
 		}
 
 		&__contacts {
-			width: min(100%, 33.13rem);
+			width: 33.13rem;
 		}
 	}
 
@@ -156,11 +156,7 @@
 
 		&__link {
 			position: relative;
-			font-size: var(--fs-300);
-			font-weight: var(--fw-bold);
-			line-height: 1.5;
 			color: var(--clr-200);
-			text-decoration: none;
 
 			&:after {
 				content: "";
@@ -188,6 +184,28 @@
 				display: inline-block;
 				vertical-align: top;
 				stroke: var(--clr-200);
+			}
+		}
+	}
+
+	@media (768px <= width < 1440px) {
+		.footer {
+			flex-direction: column;
+			padding-inline: 3.75rem;
+
+			&__social {
+				width: 100%;
+			}
+
+			&__contacts {
+				width: 100%;
+				margin-top: 6.25rem;
+			}
+		}
+
+		.contacts {
+			&__list-item {
+				margin-bottom: 1.375rem;
 			}
 		}
 	}
