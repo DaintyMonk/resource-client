@@ -179,17 +179,31 @@
 		}
 
 		&__img {
+			position: relative;
 			width: 19.375rem;
 			height: 19.375rem;
 			border: transparent;
 			border-radius: 2.5rem;
+			cursor: pointer;
 			overflow: hidden;
 
 			& > img {
-				width: 100%;
-				height: 100%;
+				position: absolute;
+				top: -0.9375rem;
+				left: -0.9375rem;
+				right: -0.9375rem;
+				bottom: -0.9375rem;
+				width: 21.25rem;
+				max-width: 21.25rem;
+				height: 21.25rem;
 				object-fit: cover;
 				object-position: center;
+
+				transition: transform 0.5s ease-in-out;
+
+				&:hover {
+					transform: scale(0.91);
+				}
 			}
 		}
 
@@ -207,6 +221,8 @@
 		&__title,
 		&__size,
 		&__additive {
+			width: 100%;
+
 			&-name {
 				margin: 0 0 0.75rem 0;
 				color: var(--clr-700);
@@ -219,7 +235,9 @@
 
 			&-tab {
 				display: flex;
+				flex-wrap: wrap;
 				margin-top: 0.5rem;
+				gap: 0.5rem;
 			}
 		}
 
@@ -249,10 +267,12 @@
 		}
 	}
 
-	.size__tab,
-	.additive__tab {
-		&-item {
-			margin-right: 0.5rem;
+	@media (768px <= width < 1440px) {
+		.modal {
+			&__description {
+				width: 21.625rem;
+				height: 37.125rem;
+			}
 		}
 	}
 </style>
