@@ -1,6 +1,8 @@
 <script>
+	import VMenuModal from "./v-menu-modal";
 	export default {
 		name: "VMenuCard",
+		components: { VMenuModal },
 		props: {
 			itemType: {
 				type: String,
@@ -23,12 +25,25 @@
 				default: () => "",
 			},
 		},
+		data() {
+			return {
+				isModalVisible: false,
+			};
+		},
+		methods: {
+			showModal() {
+				this.isModalVisible = true;
+			},
+			closeModal() {
+				this.isModalVisible = false;
+			},
+		},
 	};
 </script>
 
 <template>
 	<div class="menu-card">
-		<div class="menu-card__img">
+		<div class="menu-card__img" @click="showModal">
 			<img :src="require(`~/assets/imgs/${itemType}/${img}.png`)" :alt="name" />
 		</div>
 		<div class="menu-card__content">
@@ -42,6 +57,15 @@
 				{{ price }}
 			</h3>
 		</div>
+		<VMenuModal
+			v-if="isModalVisible"
+			:item-type="itemType"
+			:img="img"
+			:name="name"
+			:description="description"
+			:price="price"
+			@close="closeModal"
+		/>
 	</div>
 </template>
 
@@ -57,6 +81,7 @@
 			height: 19.375rem;
 			border: transparent;
 			border-radius: 2.5rem;
+			cursor: pointer;
 			overflow: hidden;
 
 			& > img {
