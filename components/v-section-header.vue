@@ -1,15 +1,16 @@
 <script lang="ts">
 	import VDesktopMenu from "~/components/v-desktop-menu.vue";
+	import VBurgerMenu from "~/components/v-burger-menu.vue";
 	export default {
 		name: "VSectionHeader",
-		components: { VDesktopMenu },
+		components: { VBurgerMenu, VDesktopMenu },
 		data() {
 			return {
 				anchorLinks: [
 					{
 						path: "/",
 						hash: "favorite",
-						text: "Favorite Coffee",
+						text: "Favorite coffee",
 					},
 					{
 						path: "/",
@@ -19,7 +20,7 @@
 					{
 						path: "/",
 						hash: "mobile",
-						text: "Mobile App",
+						text: "Mobile app",
 					},
 					{
 						path: "/",
@@ -35,18 +36,25 @@
 <template>
 	<header class="header">
 		<VDesktopMenu class="header__menu" :anchor-links="anchorLinks" />
+		<VBurgerMenu class="header__burger-menu" :anchor-links="anchorLinks" />
 	</header>
 </template>
 
 <style lang="scss" scoped>
 	.header {
-		margin: 1.25rem 0;
+		&__burger-menu {
+			display: none;
+		}
 	}
 
 	@media (width < 1440px) {
 		.header {
 			&__menu {
 				display: none;
+			}
+
+			&__burger-menu {
+				display: block;
 			}
 		}
 	}
