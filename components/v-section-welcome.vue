@@ -47,11 +47,8 @@
 		}
 
 		&__container {
-			--max-width: 33.13rem;
-			--padding-left: 6.25rem;
-
-			width: min(100%, calc(33.13rem + var(--padding-left)));
-			padding: 6.25rem 0 0 var(--padding-left);
+			width: min(100%, 33.125rem + (6.25rem * 2));
+			padding: 6.25rem;
 		}
 
 		&__heading {
@@ -62,6 +59,15 @@
 		&__text {
 			margin-bottom: 2.5rem;
 			color: var(--clr-200);
+		}
+	}
+
+	@media (768px <= width < 1440px) {
+		.welcome {
+			&__container {
+				width: min(100%, 33.125rem + (3.75rem * 2));
+				padding: 6.25rem 3.75rem;
+			}
 		}
 	}
 </style>
