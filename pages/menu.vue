@@ -227,7 +227,7 @@
 				:key="index"
 				class="menu__tab-item"
 				:tab-name="tab.tabName"
-				:current-menu-index="currentMenuIndex"
+				:current-item-index="currentMenuIndex"
 				:current-tab-index="index"
 				@click.native="selectMenu(index)"
 			>

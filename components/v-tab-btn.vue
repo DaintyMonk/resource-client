@@ -10,14 +10,14 @@
 				type: Number,
 				default: () => 0,
 			},
-			currentMenuIndex: {
+			currentItemIndex: {
 				type: Number,
-				default: () => 0,
+				default: () => -1,
 			},
 		},
 		computed: {
 			active() {
-				return this.currentTabIndex === this.currentMenuIndex;
+				return this.currentTabIndex === this.currentItemIndex;
 			},
 		},
 	};
