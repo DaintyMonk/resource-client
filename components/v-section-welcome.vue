@@ -70,4 +70,15 @@
 			}
 		}
 	}
+
+	@media (width < 768px) {
+		.welcome {
+			height: 34.5rem;
+
+			&__container {
+				width: min(100%, 19.75rem + (1rem * 2));
+				padding: 3.75rem 1rem;
+			}
+		}
+	}
 </style>

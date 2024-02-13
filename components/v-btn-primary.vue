@@ -19,7 +19,7 @@
 
 <template>
 	<NuxtLink class="btn__link" :to="{ path: path, hash: hash }">
-		<button class="btn_primary">
+		<button class="btn_primary btn-text">
 			<slot />
 			<VIcon width="20" height="20" icon-color="none" stroke-color="none">
 				<VCoffeeCupIcon />
@@ -44,10 +44,6 @@
 			border-radius: 2.5rem;
 			border-color: transparent;
 			cursor: pointer;
-
-			font-size: var(--fs-300);
-			font-weight: var(--fw-bold);
-			line-height: 1.5;
 			color: var(--clr-700);
 
 			& > svg {
