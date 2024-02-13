@@ -240,7 +240,7 @@
 			<VMenuCard
 				v-for="(card, index) in menu[currentMenuIndex]"
 				:key="index"
-				class="menu-item"
+				class="menu__container-card"
 				:item-type="card.type"
 				:img="card.img"
 				:name="card.name"
@@ -285,12 +285,49 @@
 			gap: 2.5rem;
 			margin-top: 2.5rem;
 		}
+
+		&__refresh {
+			display: none;
+		}
 	}
 
 	@media (768px <= width < 1440px) {
 		.menu {
 			&__container {
-				margin: 2.5rem 0.875rem 2.5rem 0.875rem;
+				margin: 2.5rem 0.875rem;
+			}
+
+			&-item {
+				&:nth-child(n + 5) {
+					display: none;
+				}
+			}
+
+			&__refresh {
+				display: flex;
+				margin-inline: auto;
+			}
+		}
+	}
+
+	@media (width < 768px) {
+		.menu {
+			&__container {
+				flex-flow: column nowrap;
+				justify-content: normal;
+				margin: 2.5rem 1.1875rem;
+
+				&-card {
+					margin-inline: auto;
+				}
+			}
+
+			&__tab {
+				flex-wrap: nowrap;
+
+				&-item {
+					margin-inline: 0.25rem;
+				}
 			}
 
 			&-item {
