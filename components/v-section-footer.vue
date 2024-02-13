@@ -209,4 +209,26 @@
 			}
 		}
 	}
+
+	@media (width < 768px) {
+		.footer {
+			flex-direction: column;
+			padding: 3.75rem 1rem;
+
+			&__social {
+				width: 100%;
+			}
+
+			&__contacts {
+				width: 100%;
+				margin-top: 2.5rem;
+			}
+		}
+
+		.contacts {
+			&__list-item {
+				margin-bottom: 1.375rem;
+			}
+		}
+	}
 </style>
