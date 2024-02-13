@@ -294,12 +294,14 @@
 	@media (768px <= width < 1440px) {
 		.menu {
 			&__container {
-				margin: 2.5rem 0.875rem;
-			}
+				width: 43rem;
+				margin: 2.5rem auto;
+				padding-inline: 0.875rem;
 
-			&-item {
-				&:nth-child(n + 5) {
-					display: none;
+				&-card {
+					&:nth-child(n + 5) {
+						display: none;
+					}
 				}
 			}
 
@@ -319,6 +321,10 @@
 
 				&-card {
 					margin-inline: auto;
+
+					&:nth-child(n + 5) {
+						display: none;
+					}
 				}
 			}
 
@@ -327,12 +333,6 @@
 
 				&-item {
 					margin-inline: 0.25rem;
-				}
-			}
-
-			&-item {
-				&:nth-child(n + 5) {
-					display: none;
 				}
 			}
 
