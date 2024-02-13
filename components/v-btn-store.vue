@@ -40,7 +40,6 @@
 		align-items: center;
 		width: 12.5rem;
 		height: 4rem;
-		margin-right: 1rem;
 		padding: 0.75rem 1.25rem;
 		border: 0.06rem solid var(--clr-600);
 		border-radius: 6.25rem;
