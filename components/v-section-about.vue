@@ -60,9 +60,9 @@
 				left: -2.06rem;
 				right: -2.06rem;
 				bottom: -4.25rem;
-				width: 45.38rem;
-				max-width: 45.38rem;
-				height: 45.38rem;
+				width: 45.375rem;
+				max-width: 45.375rem;
+				height: 45.375rem;
 				object-fit: cover;
 				object-position: center;
 
@@ -104,6 +104,39 @@
 					width: 47.38rem;
 					max-width: 47.38rem;
 					height: 42.38rem;
+
+					&:hover {
+						transform: scale(0.91);
+					}
+				}
+			}
+		}
+	}
+
+	@media (width < 768px) {
+		.about {
+			&__container {
+				width: 21.75rem;
+				height: 100%;
+				margin-inline: auto;
+			}
+
+			&__img {
+				width: 100%;
+
+				&:not(&:first-child, &:last-child) {
+					display: none;
+				}
+
+				& > img {
+					position: absolute;
+					top: -4.25rem;
+					left: -11.8125rem;
+					right: -11.8125rem;
+					bottom: -4.25rem;
+					width: 45.375rem;
+					max-width: 45.375rem;
+					height: 45.375rem;
 
 					&:hover {
 						transform: scale(0.91);
