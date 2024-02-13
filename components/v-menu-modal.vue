@@ -275,4 +275,21 @@
 			}
 		}
 	}
+
+	@media (width < 768px) {
+		.modal {
+			width: 21.375rem;
+			height: 39.125rem;
+
+			&__img {
+				display: none;
+			}
+
+			&__description {
+				width: 100%;
+				height: 100%;
+				padding-left: 0;
+			}
+		}
+	}
 </style>
