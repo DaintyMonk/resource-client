@@ -39,4 +39,11 @@
 			grid-column: full-width;
 		}
 	}
+
+	@media (width < 768px) {
+		.content-grid,
+		.full-width {
+			--padding-inline: 1rem;
+		}
+	}
 </style>

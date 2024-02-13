@@ -45,64 +45,67 @@
 </template>
 
 <style lang="scss" scoped>
-	.menu {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+	@media (width >= 1440px) {
+		.menu {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 1.25rem 0;
 
-		&__nav {
-			margin-top: 1rem;
+			&__nav {
+				margin-top: 1rem;
 
-			&-links {
-				display: flex;
-				flex-wrap: wrap;
-				margin: 0;
-				padding: 0;
-			}
-
-			&-item {
-				margin-inline: 1.25rem;
-
-				&:last-child {
-					margin-right: 0;
+				&-links {
+					display: flex;
+					flex-wrap: wrap;
+					margin: 0;
+					padding: 0;
 				}
 
-				&:first-child {
-					margin-left: 0;
-				}
-			}
+				&-item {
+					margin-inline: 1.25rem;
 
-			&-link {
-				position: relative;
-				color: var(--clr-700);
+					&:last-child {
+						margin-right: 0;
+					}
 
-				> svg {
-					fill: transparent;
-					stroke: var(--clr-700);
+					&:first-child {
+						margin-left: 0;
+					}
 				}
 
-				&:after {
-					content: "";
-					position: absolute;
-					left: 50%;
-					transform: translateX(-50%);
-					display: block;
-					width: 0;
-					height: 0.125rem;
-					background-color: var(--clr-700);
-					transition: width 0.3s ease-in-out;
-				}
+				&-link {
+					position: relative;
+					color: var(--clr-700);
 
-				&:hover:after,
-				&:hover:focus,
-				&_active:after {
-					width: 100%;
-				}
+					> svg {
+						fill: transparent;
+						stroke: var(--clr-700);
+					}
 
-				> svg {
-					display: inline-block;
-					vertical-align: top;
-					margin-left: 0.3125rem;
+					&:after {
+						content: "";
+						position: absolute;
+						left: 50%;
+						transform: translateX(-50%);
+						display: block;
+						width: 0;
+						height: 0.125rem;
+						background-color: var(--clr-700);
+						transition: width 0.3s ease-in-out;
+					}
+
+					&:hover:after,
+					&:hover:focus,
+					&_active:after {
+						width: 100%;
+					}
+
+					> svg {
+						display: inline-block;
+						vertical-align: top;
+						margin-left: 0.3125rem;
+					}
 				}
 			}
 		}

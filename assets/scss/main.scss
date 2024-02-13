@@ -58,3 +58,12 @@ body {
 	line-height: 1.25;
 	text-decoration: none;
 }
+
+@media (width < 768px) {
+	.heading-text {
+		&_big {
+			line-height: 1.15;
+		}
+	}
+}
+
