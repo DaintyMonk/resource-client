@@ -107,27 +107,6 @@
 		margin-bottom: 2.5rem;
 
 		&__btn {
-			width: 3.75rem;
-			height: 3.75rem;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			background-color: transparent;
-			border: 0.06rem solid var(--clr-600);
-			border-radius: 6.25rem;
-
-			&:hover {
-				background-color: var(--clr-600);
-			}
-
-			&-icon {
-				stroke: var(--clr-600);
-			}
-
-			&:hover > &-icon {
-				stroke: var(--clr-200);
-			}
-
 			&:first-child {
 				margin-left: 0.25rem;
 			}
@@ -165,6 +144,26 @@
 				&:last-child {
 					margin-right: 0;
 				}
+			}
+		}
+	}
+
+	@media (width < 768px) {
+		.slider {
+			justify-content: center;
+
+			&__btn {
+				&:first-child {
+					display: none;
+				}
+
+				&:last-child {
+					display: none;
+				}
+			}
+
+			&__list {
+				max-width: 21.75rem;
 			}
 		}
 	}

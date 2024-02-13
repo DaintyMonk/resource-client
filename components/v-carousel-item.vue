@@ -67,4 +67,14 @@
 			color: var(--clr-700);
 		}
 	}
+
+	@media (width < 768px) {
+		.card {
+			width: 21.75rem;
+
+			&__img {
+				height: 21.75rem;
+			}
+		}
+	}
 </style>
