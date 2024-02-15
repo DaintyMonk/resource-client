@@ -33,7 +33,7 @@
 			<NuxtLink
 				class="menu__nav-link link-text"
 				to="/menu"
-				active-class="link_active"
+				active-class="menu__nav-link_active"
 			>
 				Menu
 				<VIcon width="20" height="20" icon-color="none" stroke-color="none">
@@ -96,7 +96,6 @@
 					}
 
 					&:hover:after,
-					&:hover:focus,
 					&_active:after {
 						width: 100%;
 					}

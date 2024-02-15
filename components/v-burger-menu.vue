@@ -56,7 +56,7 @@
 			<NuxtLink
 				class="burger-menu__coffee-menu burger-menu__nav-link burger-link"
 				to="/menu"
-				active-class="link_active"
+				active-class="burger-menu__nav-link_active"
 			>
 				Menu
 				<VIcon icon-color="transparent" stroke-color="none">
@@ -120,7 +120,6 @@
 					}
 
 					&:hover:after,
-					&:hover:focus,
 					&_active:after {
 						width: 100%;
 					}
