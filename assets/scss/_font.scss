@@ -4,9 +4,9 @@
 	font-weight: 400;
 	font-display: swap;
 	src: local('inter'), local('inter-regular'),
-		url('~/assets/fonts/inter/Inter-Regular.woff2') format('woff2'),
-		url('~/assets/fonts/inter/Inter-Regular.woff') format('woff'),
-		url('~/assets/fonts/inter/Inter-Regular.ttf') format('truetype');
+		url('/fonts/inter/Inter-Regular.woff2') format('woff2'),
+		url('/fonts/inter/Inter-Regular.woff') format('woff'),
+		url('/fonts/inter/Inter-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -15,9 +15,9 @@
 	font-weight: 600;
 	font-display: swap;
 	src: local('inter'), local('inter-semibold'),
-		url('~/assets/fonts/inter/Inter-Semibold.woff2') format('woff2'),
-		url('~/assets/fonts/inter/Inter-Semibold.woff') format('woff'),
-		url('~/assets/fonts/inter/Inter-Semibold.ttf') format('truetype');
+		url('/fonts/inter/Inter-Semibold.woff2') format('woff2'),
+		url('/fonts/inter/Inter-Semibold.woff') format('woff'),
+		url('/fonts/inter/Inter-Semibold.ttf') format('truetype');
 }
 
 @font-face {
@@ -26,7 +26,7 @@
 	font-weight: 600;
 	font-display: swap;
 	src: local('inter'), local('inter-semibold'),
-		url('~/assets/fonts/inter/Inter-Semibold-Italic.woff2') format('woff2'),
-		url('~/assets/fonts/inter/Inter-Semibold-Italic.woff') format('woff'),
-		url('~/assets/fonts/inter/Inter-Semibold-Italic.ttf') format('truetype');
+		url('/fonts/inter/Inter-Semibold-Italic.woff2') format('woff2'),
+		url('/fonts/inter/Inter-Semibold-Italic.woff') format('woff'),
+		url('/fonts/inter/Inter-Semibold-Italic.ttf') format('truetype');
 }
