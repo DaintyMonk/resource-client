@@ -70,8 +70,9 @@
 
 <template>
 	<transition name="modal-fade">
-		<div class="modal-backdrop" role="dialog">
-			<div ref="modal" class="modal">
+		<div class="modal" role="dialog">
+			<div class="modal__backdrop" @click="close" />
+			<div class="modal__content">
 				<div class="modal__img">
 					<img
 						:src="require(`~/assets/imgs/${itemType}/${img}.png`)"
@@ -150,21 +151,26 @@
 <style lang="scss" scoped>
 	.modal {
 		display: flex;
-		flex-wrap: wrap;
-		background-color: var(--clr-200);
-		padding: 1rem;
-		border-radius: 2.5rem;
+		align-items: center;
+		justify-content: center;
 
-		&-backdrop {
+		&,
+		&__backdrop {
 			position: fixed;
 			top: 0;
 			bottom: 0;
 			left: 0;
 			right: 0;
 			background-color: var(--clr-500);
+			z-index: 999;
+		}
+
+		&__content {
 			display: flex;
-			justify-content: center;
-			align-items: center;
+			flex-wrap: wrap;
+			background-color: var(--clr-200);
+			padding: 1rem;
+			border-radius: 2.5rem;
 			z-index: 1000;
 		}
 
@@ -278,8 +284,10 @@
 
 	@media (width < 768px) {
 		.modal {
-			width: 21.375rem;
-			height: 39.125rem;
+			&__content {
+				width: 21.375rem;
+				height: 39.125rem;
+			}
 
 			&__img {
 				display: none;
