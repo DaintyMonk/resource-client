@@ -1,29 +1,19 @@
 <script>
 	export default {
 		name: "VBtnBurger",
-		data() {
-			return {
-				open: false,
-			};
-		},
-		computed: {
-			state() {
-				if (this.open) return "burger__bar_active";
-				else return "";
-			},
-		},
-		methods: {
-			changeState() {
-				this.open = !this.open;
+		props: {
+			open: {
+				type: Boolean,
+				default: () => false,
 			},
 		},
 	};
 </script>
 
 <template>
-	<div class="burger" @click="changeState">
-		<div class="burger__bar" :class="state"></div>
-		<div class="burger__bar" :class="state"></div>
+	<div class="burger">
+		<div class="burger__bar" :class="{ burger__bar_active: open }"></div>
+		<div class="burger__bar" :class="{ burger__bar_active: open }"></div>
 	</div>
 </template>
 

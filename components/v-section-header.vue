@@ -69,7 +69,11 @@
 					</VIcon>
 				</NuxtLink>
 			</div>
-			<VBtnBurger class="panel__burger-btn" @click.native="open = !open" />
+			<VBtnBurger
+				class="panel__burger-btn"
+				:open="open"
+				@click.native="open = !open"
+			/>
 		</div>
 		<transition name="menu-fade">
 			<nav v-if="open" class="header__burger-menu">
