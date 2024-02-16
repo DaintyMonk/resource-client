@@ -69,6 +69,10 @@
 				width: min(26.25rem, 100%);
 			}
 		}
+
+		&__img {
+			object-fit: contain;
+		}
 	}
 
 	@media (768px <= width < 1440px) {
