@@ -35,11 +35,13 @@
 				if (this.currentSlideIndex > 0) {
 					this.currentSlideIndex--;
 				}
+				else this.currentSlideIndex = this.carouselData.length - 1;
 			},
 			nextSlide() {
 				if (this.currentSlideIndex < this.carouselData.length - 1) {
 					this.currentSlideIndex++;
 				}
+				else this.currentSlideIndex = 0;
 			},
 			touchStart(event) {
 				this.touch.startX = event.touches[0].clientX;
